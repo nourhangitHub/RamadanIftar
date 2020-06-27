@@ -1,0 +1,16 @@
+.reg-page{
+  padding: 50px;
+  background-color: #333f48;
+  border-bottom: 10px solid #fb0000;
+  height: 690px;
+  width: 450px;
+  .btn-orange {
+    background-color: #fb0000;
+    border-color: #fb0000;
+    color: #ffffff;
+    font-weight: 500;
+    &:hover{
+      color: gray;
+    }
+  }
+}

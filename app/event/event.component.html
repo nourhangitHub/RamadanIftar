@@ -1,0 +1,56 @@
+<app-header>
+    <div class="row no-gutters d-flex justify-content-center">
+        <div class="col-md-10 col-lg-5 text-center">
+            <div class="eventdata p-3">
+                <h1>
+                    <a id="myDIV" class="ax active">Stay Tuned!!</a>
+                </h1>
+                <hr>
+                <p>Once the countdown ends, a link will reveal to access the event</p>
+                <div class="counter-time">
+                    <ul>
+                        <div class="row">
+                            <div class="col-6 col-sm-3">
+                                <li>days<span id="days">0</span></li>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <li>Hours<span id="hours">0</span></li>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <li>Minutes<span id="minutes">0</span></li>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <li>Seconds<span id="seconds">0</span></li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="data-event-e text-left mt-5 mb-5 pt-3 pb-3">
+                    <h4>Event Date :  {{date}}</h4>
+                    <br>
+                    <h4>Event Time : {{time}}</h4>
+                    <br>
+                    <h4>Speaker : {{speaker}}</h4>
+                </div>
+                <div class="agenda">
+                    <div class="">
+                        <h1><strong>Agenda</strong> </h1>
+                        <hr>
+                        <div class="row" *ngFor="let ag of agenda">
+                          <div class="col-lg-4">
+                                <div class="time-agenda text-right p-2">
+                                    <h3> <strong>{{ag.name}}</strong></h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="p-2 text-left">
+                                    <h3>{{ag.time_from}} {{ag.time_to}}</h3>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-header>

@@ -1,0 +1,38 @@
+.ax {
+  background-color: #fb0000;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 22px;
+  border-radius: 40px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.agenda {
+  background-color: #2A2A2A;
+  padding-top: 21px;
+}
+.counter-time li {
+  display: inline-block;
+  font-size: 20px;
+  list-style-type: none;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: #2a2a2a;
+  margin-bottom: 6px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+}

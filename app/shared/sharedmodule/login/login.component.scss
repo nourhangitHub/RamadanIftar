@@ -1,0 +1,26 @@
+.login-form{
+    padding: 40px;
+    background-color: #333f48;
+    border-bottom: 10px solid #fb0000;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    .form-signin{
+      ul{
+        padding: 0 25px;
+      }
+      .form-control{
+        margin: 40px 0;
+      }
+      button{
+        margin: 40px 0;
+        background-color: #fb0000;
+        color: #fff;
+      }
+      a{
+        margin: 40px 0;
+        color: #fff;
+      }
+    }
+}

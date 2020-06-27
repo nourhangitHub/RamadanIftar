@@ -1,0 +1,73 @@
+<app-header>
+  <div >
+    <div class="pl-4">
+      <h2>The new, enhanced membership program
+        <br> that gives you more opportunities to enjoy
+        <br> valuable incentives and benefits as Lenovo
+        <br>channel partners.
+     </h2>
+  </div>
+  </div>
+  <app-login *ngIf="!currentUser" class="d-flex justify-content-end"></app-login>
+  <div class="welcome" *ngIf="currentUser">
+    <h3> Welcome </h3>
+    <h3> {{currentuserName?.account.name}} </h3>
+  </div>
+</app-header>
+<section id="why">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="why-c">
+                  <h1><strong>Why Participate? </strong></h1>
+                  <br>
+                  <br>
+                  <p>We’re adapting our Lenovo Channel activities to your remote working environments,
+                    so you can sharpen your smarter skills on the World’s #1 PC Brand!
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="cat-speaker">
+  <div class="container">
+      <div class="row no-gutters text-center d-flex justify-content-center">
+          <div class="col-6 col-lg-2">
+              <div class="image-categ p-4">
+                  <a href="http://ramadan-iftar.cat-sw.com/webinar">
+                      <img src="http://ramadan-iftar.cat-sw.com/assets/site/images/elearning.png" class="img-fluid" alt="">
+                  </a>
+              </div>
+          </div>
+          <div class="col-6 col-lg-2">
+              <div class="image-categ p-4">
+                  <a routerLink="../how-to">
+                      <img src="../../assets/images/howto.png" class="img-fluid" alt="">
+                  </a>
+              </div>
+          </div>
+           <div class="col-6 col-lg-2">
+              <div class="image-categ p-4">
+                  <a href="http://ramadan-iftar.cat-sw.com/event-page">
+                      <img src="../../assets/images/eventpage.png" class="img-fluid" alt="">
+                  </a>
+              </div>
+          </div>
+          <br>
+      </div>
+  </div>
+</section>
+<section id="activities">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <div class="activities-c">
+                  <h1><strong>Activities</strong> </h1>
+                  <hr>
+                  <p>Enjoy with Lenovo activities offered and compete</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>

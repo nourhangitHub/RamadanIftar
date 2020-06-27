@@ -1,0 +1,13 @@
+.list-unstyled {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  a{
+    text-decoration: none;
+    color: gray;
+    font-size: 30px;
+    .fab{
+      padding: 20px;
+    }
+  }
+}

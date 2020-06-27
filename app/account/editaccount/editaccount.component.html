@@ -1,0 +1,40 @@
+<app-header>
+  <div class="row no-gutters d-flex justify-content-center ">
+    <div class="col-md-8 col-lg-6 col-xl-4">
+        <div class="content">
+            <div class="d-flex justify-content-between">
+                <h3 class=""><strong>Edit My Account</strong></h3>
+                <a class="btn btn-orange  rounded-0" routerLink="../changepassword">Change Password</a>
+            </div>
+            <div class="alert alert-info" *ngIf="loading">
+              Done Successfully
+            </div>
+            <br>
+            <hr>
+            <form [formGroup]="updateForm" (ngSubmit)="updateAccount(updateForm.value)">
+               <div class="form-group">
+                  <input type="text" name="name" formControlName="name" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="company" formControlName="company"  class="form-control" placeholder="Company">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="title" formControlName="title"  class="form-control" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone"  formControlName="phone" class="form-control" placeholder="Mobile Number">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="country" formControlName="country" class="form-control" placeholder="City">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" formControlName="email"  class="form-control" placeholder="Corporate Email">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-orange">Change</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</app-header>

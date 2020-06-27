@@ -1,0 +1,32 @@
+.justify-content-end{
+  margin-left: auto !important;
+}
+.navbar{
+  padding: .5rem 1rem;
+  .navbar-toggler-icon{
+   color: #000;
+  }
+  .show{
+    ul{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  ul{
+    .nav-item {
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .nav-link {
+        background-color: #fb0000;
+        color: #ffffff;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 49px;
+        text-decoration: none;
+      }
+    }
+  }
+}

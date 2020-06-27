@@ -1,0 +1,16 @@
+<div class="login-form">
+  <h1 class="text-center font-weight-normal">Sign in<strong></strong> </h1>
+  <form class="form-signin" [formGroup]="formLogin" (ngSubmit)="loginSubmit(formLogin.value)">
+    <ul *ngIf="submitted" class="alert alert-danger">
+      <li *ngIf="email.errors"> Email is required</li>
+      <li *ngIf="password.errors"> Password is required</li>
+    </ul>
+    <input formControlName="email" type="email"  class="form-control" placeholder="Email address"  autofocus="" >
+    <input formControlName="password" type="password"  class="form-control" placeholder="Password" >
+    <button class="btn btn-lg btn-block " type="submit" >login Account</button>
+    <!-- <div class="form-group">
+      <a routerLink="/signup" class="btn btn-gray w-100 c-n">Create New Account</a>
+    </div> -->
+  </form>
+</div>
+

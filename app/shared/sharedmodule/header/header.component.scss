@@ -1,0 +1,29 @@
+.header-content{
+  background-color: #000;
+  color: #fff;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px;
+   a{
+      &::after {
+        content: '';
+        position: absolute;
+        width: 152px;
+        height: 3px;
+        background-color: #fb0000;
+    }
+    }
+    .lenovo{
+      display: flex;
+      img{
+        height: 150px;
+        padding-left: 15px;
+      }
+    }
+  }
+  .header-footer{
+    padding: 30px;
+  }
+}

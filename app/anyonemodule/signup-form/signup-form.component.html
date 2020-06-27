@@ -1,0 +1,78 @@
+<div class="reg-page">
+  <h1 class="text-center"><strong>Registration</strong></h1>
+  <br>
+  <form [formGroup]="signupForm" (ngSubmit)="signupSubmit(signupForm.value)">
+      <input type="hidden" name="_token" value="09HGQGaS6cMqC1GzQ9hau1igLgW0PpAjsAweM4X5">                                    <div class="row no-gutters">
+          <div class="col-sm-6 col-12">
+              <div class="form-group p-1">
+                  <div class="input-group">
+                      <input type="text" formControlName="name" name="name" value="" class="form-control" placeholder="Full Name">
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-12">
+              <div class="form-group p-1">
+                  <div class="input-group">
+                      <input type="text" formControlName="company" name="company" value="" class="form-control" placeholder="Company">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row no-gutters">
+          <div class="col-sm-6 col-12">
+              <div class="form-group p-1">
+                  <div class="input-group">
+                      <input formControlName="title" type="text" name="title" value="" class="form-control" placeholder="Title">
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-12">
+              <div class="form-group p-1">
+                  <div class="input-group">
+                      <input type="text" formControlName="phone" name="phone" value="" class="form-control" placeholder="Mobile Number">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row no-gutters">
+          <div class="col-sm-6 col-12">
+              <div class="form-group p-1">
+                  <div class="input-group">
+                      <input type="email" formControlName="email" name="email" value="" class="form-control" placeholder="Corporate Email">
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-12">
+              <div class="form-group p-1">
+                  <div class="input-group">
+                      <input type="password" formControlName="password" name="password" class="form-control" placeholder="Password">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row no-gutters">
+
+          <div class="col col-sm-6 col-lg-6 col-xl-6">
+              <div class="form-group p-1">
+                  <div class="input-group">
+                      <input type="text" formControlName="country" name="country" value="" class="form-control" placeholder="City">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row no-gutters">
+          <div class="col-12">
+              <div class="form-group p-1">
+                  <div class="custom-control custom-checkbox">
+                      <input type="checkbox" name="keep_updated" value="1" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Please Keep Me Informed on Product updates , Promotion and Events From Lenovo. </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="form-group  text-center">
+          <button type="submit" class="btn btn-orange">Register Now</button>
+      </div>
+  </form>
+</div>
